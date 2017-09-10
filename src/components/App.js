@@ -1,15 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../css/App.css';
-import MenuHeader from './MenuHeader'
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <MenuHeader />
-      </div>
-    );
-  }
-}
+const App = ({children}) => (
+  <div className="App">{children}</div>
+)
 
-export default App;
+export default App
