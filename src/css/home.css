@@ -1,0 +1,13 @@
+.surligne {
+  background-color: #b3cfdb;
+}
+
+.familyCode.familyCode.familyCode {
+  font-family: 'Source Code Pro', monospace;
+}
+
+.background.background.background {
+	background-image: url("../../public/image/computer.jpg");
+  padding: 10em;
+  background-size: 100%;
+}
