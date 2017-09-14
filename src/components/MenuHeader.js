@@ -13,7 +13,7 @@ export default class MenuHeader extends Component {
     const { activeItem } = this.state
 
     return(
-      <Menu stackable pointing inverted secondary size='massive' className='menuColor'>
+      <Menu stackable pointing inverted secondary fixed='top' size='massive' className='menuColor'>
         <Menu.Menu position='left'>
           <Menu.Item header>ZG</Menu.Item>
         </Menu.Menu>
