@@ -1,17 +1,19 @@
 import React from 'react'
-import { Grid } from 'semantic-ui-react'
+import { Grid, Header } from 'semantic-ui-react'
 
 import Presentation from './Presentation'
 import Punchline from './Punchline'
+import News from './News'
+
 import '../../css/home.css'
 
 const Home = () => (
   <Grid centered columns='equal'>
-    <Grid.Row style={{margin: '3em'}}></Grid.Row>
+    <Grid.Row className='marginRows'></Grid.Row>
     <Presentation />
-    <Grid.Row></Grid.Row>
     <Punchline />
-    <Grid.Row></Grid.Row>
+    <Header textAlign='center' size='huge' className='colorPurple familyCode'>Actualités</Header>
+    <News />
   </Grid>
 )
 
