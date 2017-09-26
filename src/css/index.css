@@ -6,11 +6,20 @@ body {
   font-size: 1.2rem;
 }
 
-/*@keyframes spin {
+.backgroundPurple.backgroundPurple.backgroundPurple.backgroundPurple {
+	background-color: #54546c;
+	box-shadow: 0 0 1em #54546c;
+ }
+
+.colorWhite {
+  color: white;
+}
+
+@keyframes react {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
 
-.spin {
- animation: spin 10000ms linear infinite;
-}*/
+.react {
+ animation: react 20000ms linear infinite;
+}
