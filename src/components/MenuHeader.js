@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import { activeItem } from '../actions/menuAction'
 
 const MenuHeader = ({active, dispatch}) => (
-  <Menu stackable pointing inverted secondary fixed='top' size='massive' className='backgroundPurple'>
+  <Menu stackable pointing inverted secondary fixed='top' size='massive' className='backgroundPurple boxShadow'>
     <Menu.Menu position='left'>
       <Menu.Item header>ZG</Menu.Item>
     </Menu.Menu>
