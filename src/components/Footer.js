@@ -1,16 +1,22 @@
 import React from 'react'
-import { Grid, Header } from 'semantic-ui-react'
+import { Grid, Icon } from 'semantic-ui-react'
+import Scroll from 'react-scroll'
 
 import Contact from './contact'
+
+export const scrollToTop = () => {
+  let scroll = Scroll.animateScroll
+  scroll.scrollToTop()
+}
 
 const Footer = () => (
   <Grid className='backgroundPurple colorWhite'>
     <Grid.Row>
       <Grid.Column textAlign='center'>
-        <Header as='h2' content='Contact' inverted />
+        <Icon link inverted name='arrow up' size='large' onClick={scrollToTop}/>
       </Grid.Column>
     </Grid.Row>
-    <Grid.Row centered columns={3}>
+    <Grid.Row centered columns={2}>
       <Grid.Column>
         <Contact />
       </Grid.Column>

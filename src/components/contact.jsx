@@ -4,12 +4,12 @@ import { Form, Input, TextArea, Button } from 'semantic-ui-react'
 class Contact extends React.Component {
   constructor(props) {
     super(props);
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
     this.state = {
       email: '',
       message: '',
     };
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleChange(e) {
@@ -24,8 +24,8 @@ class Contact extends React.Component {
   render () {
     return (
       <Form inverted onSubmit={this.handleSubmit}>
-        <Form.Field control={Input} name='email' label='Email' placeholder='zeliadu02@msn.com' onChange={this.handleChange} />
-        <Form.Field control={TextArea} name='message' label='Message' placeholder="Ce que vous souhaitez m'écrire" onChange={this.handleChange} />
+        <Form.Field control={Input} type='email' name='email' label='Email' placeholder='zeliadu02@msn.com' onChange={this.handleChange} required />
+        <Form.Field control={TextArea} name='message' label='Message' placeholder="Ce que vous souhaitez m'écrire" onChange={this.handleChange} required />
         <Button type='submit' inverted>Envoyer</Button>
       </Form>
     )

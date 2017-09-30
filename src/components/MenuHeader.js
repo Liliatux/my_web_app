@@ -1,8 +1,14 @@
 import React from 'react'
 import { Menu } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
+import Scroll from 'react-scroll'
 
 import { activeItem } from '../actions/menuAction'
+
+export const scrollToBottom = () => {
+  let scroll = Scroll.animateScroll
+  scroll.scrollToBottom()
+}
 
 const MenuHeader = ({active, dispatch}) => (
   <Menu stackable pointing inverted secondary fixed='top' size='massive' className='backgroundPurple boxShadow'>
@@ -13,7 +19,7 @@ const MenuHeader = ({active, dispatch}) => (
     <Menu.Item as={Link} to='/cv' name='cv' active={active === 'cv'} onClick={() => dispatch(activeItem('cv'))} />
     <Menu.Item as={Link} to='/blog' name='blog' active={active === 'blog'} onClick={() => dispatch(activeItem('blog'))} />
     <Menu.Menu position='right'>
-      <Menu.Item name='contact' active={active === 'contact'} onClick={() => dispatch(activeItem('contact'))} />
+      <Menu.Item name='contact' onClick={scrollToBottom} />
     </Menu.Menu>
   </Menu>
 )
