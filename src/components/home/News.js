@@ -15,7 +15,6 @@ const News = ({ dispatch }) => (
           <Item.Meta>
             <span>"Indispensable pour l'organisation en équipe ?"</span>
           </Item.Meta>
-          <Item.Description>paragraphe</Item.Description>
           <Item.Extra>
             <Label>Scrum</Label>
             <Label>Kanban</Label>
