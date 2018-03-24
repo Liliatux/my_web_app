@@ -1,1 +1,1 @@
-export const ACTIVE_ITEM = 'ACTIVE_ITEM'
+export const ACTIVE_ITEM = "ACTIVE_ITEM";

@@ -1,6 +1,6 @@
-import { ACTIVE_ITEM } from './actionTypes'
+import { ACTIVE_ITEM } from "./actionTypes";
 
-export const activeItem = (item) => ({
+export const activeItem = item => ({
   type: ACTIVE_ITEM,
   item
-})
+});

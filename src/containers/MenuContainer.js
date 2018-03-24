@@ -1,10 +1,10 @@
-import { connect } from 'react-redux'
-import MenuHeader from '../components/MenuHeader'
+import { connect } from "react-redux";
+import MenuHeader from "../components/MenuHeader";
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = state => ({
   active: state.activeItem
-})
+});
 
-const menuContainer = connect(mapStateToProps)(MenuHeader)
+const menuContainer = connect(mapStateToProps)(MenuHeader);
 
-export default menuContainer
+export default menuContainer;

@@ -1,10 +1,10 @@
-const activeItem = (state = 'accueil', action) => {
+const activeItem = (state = "accueil", action) => {
   switch (action.type) {
-    case 'ACTIVE_ITEM':
-      return action.item
+    case "ACTIVE_ITEM":
+      return action.item;
     default:
-      return state
+      return state;
   }
-}
+};
 
-export default activeItem
+export default activeItem;
