@@ -3,7 +3,7 @@
 }
 
 .background.background.background {
-	background-image: url("../../public/image/computer.jpg");
+	background-image: url("./computer.jpg");
   padding: 10em;
   background-size: 100%;
 }

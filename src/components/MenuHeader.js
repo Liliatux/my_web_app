@@ -26,9 +26,9 @@ const MenuHeader = ({ active, dispatch }) => (
     <Menu.Item
       as={Link}
       to="/"
-      name="accueil"
-      active={active === "accueil"}
-      onClick={() => dispatch(activeItem("accueil"))}
+      name="home"
+      active={active === "home"}
+      onClick={() => dispatch(activeItem("home"))}
     />
     <Menu.Item
       as={Link}
@@ -39,13 +39,22 @@ const MenuHeader = ({ active, dispatch }) => (
     />
     <Menu.Item
       as={Link}
-      to="/blog"
-      name="blog"
-      active={active === "blog"}
-      onClick={() => dispatch(activeItem("blog"))}
+      to="/pictures"
+      name="pictures"
+      active={active === "pictures"}
+      onClick={() => dispatch(activeItem("pictures"))}
     />
     <Menu.Menu position="right">
-      <Menu.Item name="contact" onClick={scrollToBottom} />
+    <Menu.Item
+      as="a"
+      href="https://www.linkedin.com/in/z%C3%A9lia-geerts-835b47134/"
+      icon="linkedin"
+    />
+    <Menu.Item
+      as="a"
+      href="https://github.com/Liliatux"
+      icon="github"
+    />
     </Menu.Menu>
   </Menu>
 );

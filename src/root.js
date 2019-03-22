@@ -7,7 +7,6 @@ import App from "./components/App";
 import Home from "./components/home/Home";
 import Cv from "./components/cv/Cv";
 import Blog from "./components/blog/Blog";
-import Footer from "./components/Footer";
 
 const Root = () => (
   <BrowserRouter>
@@ -18,7 +17,6 @@ const Root = () => (
         <Route path="/cv" component={Cv} />
         <Route path="/blog" component={Blog} />
       </App>
-      <Footer />
     </div>
   </BrowserRouter>
 );

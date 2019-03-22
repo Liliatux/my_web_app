@@ -1,4 +1,4 @@
-const activeItem = (state = "accueil", action) => {
+const activeItem = (state = "home", action) => {
   switch (action.type) {
     case "ACTIVE_ITEM":
       return action.item;
